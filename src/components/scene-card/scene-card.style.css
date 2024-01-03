@@ -1,0 +1,32 @@
+:host {
+    display: inline-block;
+    text-align: center;
+    position: relative; 
+}
+.card {
+    float: left;
+    position: relative;
+	width: 300px;
+	height: 175px;
+    margin: 8px;
+    border: 2px solid #888;
+    border-radius: 2px; 
+    background-color: #dedede;
+    color: #000;
+
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto 1fr;
+	grid-gap: 0;
+
+}
+#sceneTitle {grid-area: 1 / 1;height: 24px}
+#content {grid-area: 2 / 1;overflow-y: auto;}
+
+.scene-title {padding: 0 4px;font-weight: bold;}
+.scene-line {font-size: 0.8em;padding: 4px 4px;font-style: italic;}
+.scene-desc {font-size: 0.9em;padding: 2px 4px;}
+
+
+.clearfix{clear: both;}
+.hidden { display: none;}

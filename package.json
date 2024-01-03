@@ -1,0 +1,21 @@
+{
+  "name": "obsidian-manuscript-manager",
+  "version": "0.0.5",
+  "description": "Adds funcitonality for managing longer manuscripts such as books.",
+  "main": "src/plugin.js",
+  "scripts": {
+    "build": "rollup --config",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "obsidian",
+    "manauscript"
+  ],
+  "author": "Will Strye",
+  "license": "ISC",
+  "devDependencies": {
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-html-string": "^1.0.1",
+    "rollup-plugin-import-css": "^3.3.5"
+  }
+}

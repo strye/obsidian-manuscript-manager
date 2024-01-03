@@ -1,0 +1,10 @@
+{
+	"id": "obsidian-manuscript-manager",
+	"name": "Manuscript Manager",
+	"version": "0.0.7",
+	"minAppVersion": "0.0.5",
+	"description": "The plugin adds functionality for managing longer manuscripts such as books.",
+	"author": "Strye",
+	"authorUrl": "https://github.com/strye/md-extensions-obsidian",
+	"isDesktopOnly": false
+}
