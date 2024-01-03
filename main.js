@@ -826,7 +826,7 @@ class BoardPage extends WiredHTMLElement {
 		let eData = [],
 		sr = this.shadowRoot,
 		scenes= sr.querySelectorAll("scene-card"),
-		order = 1;
+		order = 0;
 		scenes.forEach(scene => {
 			scene.sceneNumber = order;
 			scene.sceneLine.scene = order;
