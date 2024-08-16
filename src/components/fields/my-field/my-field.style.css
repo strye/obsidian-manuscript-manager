@@ -1,0 +1,82 @@
+@import url('../../styles/wc-common.css');
+@import url('../../styles/active-icons.css');
+:host {
+	text-align: left;
+	color: var(--text_regular);
+
+	/* display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto; */
+}
+#fldContainer {
+	height:100%;
+	
+	display:grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr auto;
+}
+#aValue { 
+	grid-row: 1;
+	border-bottom: 1px solid var(--squid_ink);
+	min-height: 23px;
+}
+
+.attr-view {
+	height:100%;
+	min-height: 23px;
+}
+.attr-edit {
+	height:100%;
+}
+.attr-title {
+	grid-row: 2;
+	font-weight: bold;
+	font-size: 12px;
+	font-variant: small-caps;
+
+	display: grid;
+	grid-template-columns: 1fr auto auto auto;
+}
+
+
+#lblElm { grid-column: 1;}
+#icoEdit { grid-column: 2; float: none;}
+#icoSave { grid-column: 3; float: none;}
+#icoCanel { grid-column: 4; float: none;}
+
+
+#txtElm {
+	height:100%;
+	min-height: 23px;
+	background-color: var(--stone_50);
+}
+
+input[type=text], textarea {
+	width:100%;
+	box-sizing: border-box;
+	background-color: var(--edit_bg);
+}
+textarea {
+	height:100%;
+	resize:none;
+	scroll-behavior: auto;
+}
+input[type=checkbox] {
+	border-color: var(--squid_ink);
+	width: 17px;
+	height: 17px;
+	margin-left: 8px;
+	accent-color: var(--smile);
+}
+
+
+input:focus, textarea:focus {
+	outline: none !important;
+	border-color: var(--aqua);
+	box-shadow: 0 0 5px var(--aqua);
+}
+
+
+.hidden {display: none;}
+.required {border: 1px solid var(--cosmos)}
+.missing {border: 2px solid var(--text_caution)}

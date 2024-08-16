@@ -1,0 +1,26 @@
+<style>
+:host {
+	display: block;
+	position: relative;
+	text-align: left;
+}
+
+.attr-edit {
+	border-bottom: 1px solid var(--squid_ink);
+}
+.attr-title {
+	font-weight: bold;
+	font-size: 12px;
+	font-variant: small-caps;
+	color: var(--text_regular);
+}
+select {
+	width:100%;
+	box-sizing: border-box;
+	background-color: var(--edit_bg);
+}
+</style>
+
+<div class='attr-edit'><select id='selElm'></select></div>
+<div class='attr-title' id='lblElm'></div>
+<slot></slot>	

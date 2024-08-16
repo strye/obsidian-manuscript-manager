@@ -1,0 +1,49 @@
+.content {
+	height: 75%;
+	width: 75%;
+	padding: 24px;
+}
+
+.ws-detail {
+	display:grid;
+
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 2fr 1fr 1fr 2fr auto;
+	grid-gap: 10px 16px;
+}
+
+h1 {grid-area: 1/1/1/span 3;}
+#custName {grid-area: 2/1/2/span 3;}
+
+#ipTitle {grid-area: 3/1/3/span 3;}
+#taDescription {grid-area: 4/1/4/span 3;}
+
+#selCat {grid-area: 5/1/5/1;}
+#selSA {grid-area: 5/2/5/2;}
+#selStatus {grid-area: 5/3/5/3;}
+
+#ipTags {grid-area: 6/1/6/span 3;}
+#taNotes {grid-area: 7/1/7/span 3;}
+
+.action-pane {grid-area: 8/1/8/span 3;}
+
+
+#errMsg {
+	display:none;
+	border-top: 1px solid var(--text_caution);
+	border-bottom: 1px solid var(--text_caution);
+	padding: 12px;
+	margin-bottom: 12px;
+	background-color: var(--stone);
+	color: var(--text_caution);
+}
+.action-pane button {
+	text-align: center;
+	color: var(--dark_squid_ink);
+	border: 2px solid var(--squid_ink);
+	background-color: var(--stone);
+	float:right;
+}
+.action-pane button:hover {
+	color: var(--text_active);
+}

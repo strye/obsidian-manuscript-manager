@@ -1,0 +1,30 @@
+<div class="ws-detail">
+	<h1>Add New Scene</h1>
+	<h2 id="custName"></h2>
+	
+	<my-text id="ipTitle" field-label="Scene Title" field-mode="input"></my-text>
+	<my-textarea id="taDescription" field-label="Description" field-mode="input"></my-textarea>
+
+	sceneLine.scene
+	<my-text id="ipSceneNo" field-label="Scene Number" field-mode="input"></my-text>
+	sceneline.day
+	<my-text id="ipDay" field-label="Story Day" field-mode="input"></my-text>
+	sceneline.pov
+	<my-text id="ipPOV" field-label="Character POV" field-mode="input"></my-text>
+	sceneline.where
+	<my-text id="ipWhere" field-label="Where is it" field-mode="input"></my-text>
+	sceneline.when
+	<my-text id="ipWhen" field-label="When is it" field-mode="input"></my-text>
+
+	// .prop('sceneConflict',fm.title)
+	<my-textarea id="taConflict" field-label="Scene Conflict" field-mode="input"></my-textarea>
+	// .prop('sceneChoice',fm.title)
+	<my-textarea id="taChoice" field-label="Scene Choice" field-mode="input"></my-textarea>
+	// .prop('sceneConsequence',fm.title)
+	<my-textarea id="taConsequence" field-label="Scene Consequence" field-mode="input"></my-textarea>
+
+	<div class="action-pane">
+		<div id="errMsg"></div>
+		<div><button id="btnSave">Save New Workstream</button></div>
+	</div>
+</div>
